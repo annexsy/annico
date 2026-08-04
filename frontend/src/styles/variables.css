@@ -1,0 +1,17 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-soft: #f7f7f7;
+  --color-text: #111111;
+  --color-text-muted: #555555;
+  --color-border: #e5e5e5;
+  --color-line: #111111;
+  --color-hero-overlay: rgba(0, 0, 0, 0.28);
+
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "DM Sans", "Helvetica Neue", Helvetica, sans-serif;
+
+  --nav-height: 3.5rem;
+  --space-section: clamp(3rem, 8vw, 5.5rem);
+  --max-content: 68rem;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}

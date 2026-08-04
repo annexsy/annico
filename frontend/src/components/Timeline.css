@@ -1,0 +1,131 @@
+.timeline {
+  position: relative;
+  margin-top: 3rem;
+  padding: 0 0.5rem 1rem;
+}
+
+.timeline__track {
+  position: absolute;
+  top: 0.55rem;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: var(--color-text);
+  opacity: 0.85;
+}
+
+.timeline__nodes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.timeline__node {
+  display: flex;
+  justify-content: center;
+}
+
+.timeline__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  max-width: 11rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: center;
+}
+
+.timeline__dot {
+  position: relative;
+  z-index: 1;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-text);
+  background: var(--color-bg);
+  transition:
+    background 0.3s var(--ease-out),
+    transform 0.3s var(--ease-out),
+    box-shadow 0.3s var(--ease-out);
+}
+
+.timeline__button--active .timeline__dot {
+  background: var(--color-text);
+  transform: scale(1.12);
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.08);
+}
+
+.timeline__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.timeline__title {
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.timeline__when {
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.timeline__button:hover .timeline__dot {
+  transform: scale(1.08);
+}
+
+@media (max-width: 800px) {
+  .timeline {
+    overflow-x: auto;
+    padding-bottom: 1.25rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .timeline__track {
+    left: 3rem;
+    right: 3rem;
+    width: calc(4 * 10.5rem - 6rem);
+  }
+
+  .timeline__nodes {
+    width: max-content;
+    min-width: 100%;
+    grid-template-columns: repeat(4, 10.5rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .timeline__track {
+    display: none;
+  }
+
+  .timeline__nodes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .timeline__button {
+    flex-direction: row;
+    max-width: none;
+    gap: 1rem;
+    text-align: left;
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .timeline__label {
+    align-items: flex-start;
+  }
+}

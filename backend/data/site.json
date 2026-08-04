@@ -1,0 +1,71 @@
+{
+  "couple": {
+    "partnerOne": "Anne",
+    "partnerTwo": "Nico"
+  },
+  "hero": {
+    "image": "/images/hero.jpg",
+    "alt": "Anne and Nico"
+  },
+  "tabs": [
+    {
+      "id": "home",
+      "label": "HOME",
+      "path": "/"
+    }
+  ],
+  "schedule": [
+    {
+      "id": "welcome",
+      "title": "Welcome Drinks + Rehearsal Dinner",
+      "description": "Join us for an evening of warm conversation, light bites, and a first toast to the weekend ahead. Come as you are — we can't wait to welcome you.",
+      "venue": "The C'mon Inn",
+      "address": "Riley's Grandfather's House",
+      "dateLabel": "Friday August 13",
+      "timeLabel": "6:00pm",
+      "dayLabel": "Friday, Aug 13",
+      "mapUrl": "https://www.google.com/maps",
+      "attire": "Caftans & Denim cut-off casual",
+      "image": "/images/welcome.jpg"
+    },
+    {
+      "id": "ceremony",
+      "title": "Ceremony",
+      "description": "We invite you to gather with us as we exchange vows surrounded by those we love most. Please arrive a few minutes early so you can settle in before we begin.",
+      "venue": "Garden Pavilion",
+      "address": "123 Meadow Lane",
+      "dateLabel": "Saturday August 14",
+      "timeLabel": "6:00pm",
+      "dayLabel": "Saturday, Aug 14",
+      "mapUrl": "https://www.google.com/maps",
+      "attire": "Cocktail attire",
+      "image": "/images/ceremony.jpg"
+    },
+    {
+      "id": "reception",
+      "title": "Reception",
+      "description": "Following the ceremony, celebrate with dinner, dancing, and drinks under the stars. Your presence is the greatest gift — we hope you'll stay late and dance with us.",
+      "venue": "Garden Pavilion",
+      "address": "123 Meadow Lane",
+      "dateLabel": "Saturday August 14",
+      "timeLabel": "7:30pm",
+      "dayLabel": "Saturday, Aug 14",
+      "mapUrl": "https://www.google.com/maps",
+      "attire": "Cocktail attire",
+      "image": "/images/reception.jpg"
+    },
+    {
+      "id": "brunch",
+      "title": "Brunch",
+      "description": "One last gather before we say goodbye — coffee, pastries, and lingering goodbyes. Come for a relaxed morning and help us send off the weekend in style.",
+      "venue": "The C'mon Inn",
+      "address": "Riley's Grandfather's House",
+      "dateLabel": "Sunday August 15",
+      "timeLabel": "11:00am",
+      "dayLabel": "Sunday, Aug 15",
+      "mapUrl": "https://www.google.com/maps",
+      "attire": "Casual",
+      "image": "/images/brunch.jpg"
+    }
+  ]
+}
