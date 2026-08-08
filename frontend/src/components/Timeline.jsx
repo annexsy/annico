@@ -2,7 +2,12 @@ import './Timeline.css';
 
 export default function Timeline({ events, activeId, onSelect }) {
   return (
-    <div className="timeline" role="tablist" aria-label="Wedding schedule">
+    <div
+      className="timeline"
+      role="tablist"
+      aria-label="Wedding schedule"
+      style={{ '--timeline-count': events.length }}
+    >
       <div className="timeline__track" aria-hidden="true" />
       <ul className="timeline__nodes">
         {events.map((event) => {
@@ -20,7 +25,7 @@ export default function Timeline({ events, activeId, onSelect }) {
                 <span className="timeline__label">
                   <span className="timeline__title">{event.title}</span>
                   <span className="timeline__when">
-                    {event.dayLabel}, {event.timeLabel}
+                   {event.timeLabel}
                   </span>
                 </span>
               </button>

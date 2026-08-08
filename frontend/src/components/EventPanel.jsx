@@ -41,7 +41,7 @@ export default function EventPanel({ event }) {
         </a>
         <div className="event-panel__attire">
           <span className="event-panel__attire-label">Attire</span>
-          <p>{event.attire}</p>
+          <p>Cocktail attire</p>
         </div>
       </div>
     </article>

@@ -1,5 +1,5 @@
 .schedule {
-  background: var(--color-bg);
+  background: var(--color-bg-pastel-green);
   padding: var(--space-section) 1.5rem calc(var(--space-section) + 1rem);
 }
 
