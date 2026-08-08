@@ -1,0 +1,125 @@
+.rsvp-page {
+  min-height: calc(100vh - var(--nav-height));
+  padding: var(--space-section) 1.5rem;
+  background:
+    linear-gradient(180deg, rgba(213, 222, 206, 0.55), rgba(255, 255, 255, 0.95)),
+    var(--color-bg);
+}
+
+.rsvp-page__inner {
+  width: min(100%, 34rem);
+  margin: 0 auto;
+}
+
+.rsvp-page__title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.rsvp-page__lead {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rsvp-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.rsvp-form__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.rsvp-form__label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.rsvp-form__optional {
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
+  text-transform: none;
+  font-size: 0.75rem;
+}
+
+.rsvp-form__input,
+.rsvp-form__textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: inherit;
+  border-radius: 0;
+}
+
+.rsvp-form__input:focus,
+.rsvp-form__textarea:focus {
+  outline: 1px solid var(--color-text);
+  outline-offset: 0;
+}
+
+.rsvp-form__textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+.rsvp-form__choice {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  color: var(--color-text);
+}
+
+.rsvp-form__choice input {
+  accent-color: var(--color-text);
+}
+
+.rsvp-form__error {
+  color: #8a1f1f;
+  font-size: 0.9rem;
+}
+
+.rsvp-page__button {
+  align-self: stretch;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+  color: #fff;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: background 0.25s var(--ease-out), color 0.25s var(--ease-out);
+}
+
+.rsvp-page__button:hover:not(:disabled) {
+  background: transparent;
+  color: var(--color-text);
+}
+
+.rsvp-page__button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}

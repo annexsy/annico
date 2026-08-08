@@ -10,5 +10,7 @@ dist/
 # Env / OS
 .env
 .env.local
+frontend/.env
+frontend/.env.local
 .DS_Store
 *.log

@@ -1,3 +1,4 @@
+import { asset } from '../lib/assets';
 import './EventPanel.css';
 
 export default function EventPanel({ event }) {
@@ -5,7 +6,7 @@ export default function EventPanel({ event }) {
     <article className="event-panel">
       <div className="event-panel__image-wrap">
         <img
-          src={event.image}
+          src={asset(event.image)}
           alt=""
           className="event-panel__image"
         />

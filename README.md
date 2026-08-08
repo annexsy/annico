@@ -1,34 +1,64 @@
 # Anne & Nico — Wedding Website
 
-React frontend and Node.js backend for wedding information. Starts with a single **Home** tab; more tabs can be added via the API data file.
+React wedding site with an RSVP form. Content is static JSON; RSVPs are stored in Supabase. The app is meant to deploy to **GitHub Pages**.
 
 ## Quick start
 
 ```bash
-npm install
 npm install --prefix frontend
-npm install --prefix backend
-npm run dev
+cp frontend/.env.example frontend/.env
+# fill in Supabase values in frontend/.env
+npm run dev --prefix frontend
 ```
 
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:3001
+Open http://localhost:5173/annico/
 
-## Production
+## Supabase setup (once)
+
+1. Create a free project at [supabase.com](https://supabase.com).
+2. Run [`supabase/schema.sql`](supabase/schema.sql) in the SQL editor.
+3. Authentication → Users → add one admin user (email + password).
+4. Project Settings → API → copy URL and anon key into `frontend/.env`:
 
 ```bash
-npm run build
-npm start
+VITE_SUPABASE_URL=...
+VITE_SUPABASE_ANON_KEY=...
+VITE_ADMIN_EMAIL=the-admin-user-email@example.com
 ```
 
-The Express server serves the built frontend and the `/api` routes.
+## Pages
 
-## Adding a tab later
+| Path | Purpose |
+|------|---------|
+| `/` | Home (hero + schedule) |
+| `/rsvp` | Guest RSVP form |
+| `/admin` | Password-protected RSVP list (not in nav) |
 
-1. Add an entry to `tabs` in [`backend/data/site.json`](backend/data/site.json)
-2. Add a page component under `frontend/src/pages/`
-3. Register the route in [`frontend/src/App.jsx`](frontend/src/App.jsx)
+Admin login asks only for the password; the email comes from `VITE_ADMIN_EMAIL`.
 
 ## Content
 
-Edit [`backend/data/site.json`](backend/data/site.json) for couple names, hero image, tabs, and schedule events. Replace images in `frontend/public/images/`.
+Edit [`frontend/public/data/site.json`](frontend/public/data/site.json) for names, tabs, schedule, and image paths. Keep [`backend/data/site.json`](backend/data/site.json) in sync if you still use the Express server locally.
+
+Replace images in `frontend/public/images/`.
+
+## GitHub Pages deploy
+
+1. Repo Settings → Pages → Source: **GitHub Actions**.
+2. Add repository secrets:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+   - `VITE_ADMIN_EMAIL`
+3. Push to `master` (or `main`). Workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) builds and deploys.
+
+Site URL: `https://annexsy.github.io/annico/`
+
+## Optional Express backend
+
+The Express app under `backend/` is optional and not used for GitHub Pages hosting.
+
+```bash
+npm install
+npm install --prefix backend
+npm run dev
+```
