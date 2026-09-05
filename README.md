@@ -53,12 +53,3 @@ Replace images in `frontend/public/images/`.
 
 Site URL: `https://annexsy.github.io/annico/`
 
-## Optional Express backend
-
-The Express app under `backend/` is optional and not used for GitHub Pages hosting.
-
-```bash
-npm install
-npm install --prefix backend
-npm run dev
-```
