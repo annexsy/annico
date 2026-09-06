@@ -1,7 +1,7 @@
 import { asset } from '../lib/assets';
 import './Hero.css';
 
-export default function Hero({ couple, hero }) {
+export default function Hero({ couple, hero, dateLabel }) {
   const names = `${couple.partnerOne} & ${couple.partnerTwo}`.toUpperCase();
 
   return (
@@ -10,7 +10,10 @@ export default function Hero({ couple, hero }) {
         <img src={asset(hero.image)} alt={hero.alt} className="hero__image" />
         <div className="hero__overlay" />
       </div>
-      <h1 className="hero__names">{names}</h1>
+      <div className="hero__subheader">
+        <h1 className="hero__names">{names}</h1>
+        {dateLabel ? <p className="hero__date">{dateLabel}</p> : null}
+      </div>
     </section>
   );
 }
