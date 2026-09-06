@@ -11,7 +11,7 @@ cp frontend/.env.example frontend/.env
 npm run dev --prefix frontend
 ```
 
-Open http://localhost:5173/annico/
+Open http://localhost:5173/
 
 ## Supabase setup (once)
 
@@ -51,5 +51,5 @@ Replace images in `frontend/public/images/`.
    - `VITE_ADMIN_EMAIL`
 3. Push to `master` (or `main`). Workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) builds and deploys.
 
-Site URL: `https://annexsy.github.io/annico/`
+Site URL: `https://www.annico.se/`
 
