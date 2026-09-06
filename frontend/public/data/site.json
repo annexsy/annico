@@ -29,7 +29,7 @@
     {
       "id": "welcome",
       "title": "Welcome Drinks",
-      "description": "Join us for a mingle, light bites, and a first toast to the evening ahead. We can't wait to welcome you!",
+      "description": "Join in for a mingle, light bites, and a first toast to the evening ahead. We can't wait to welcome you!",
       "timeLabel": "14:00pm",
       "image": "/images/welcome.jpg"
     },
@@ -43,14 +43,14 @@
     {
       "id": "photograpy",
       "title": "Photography",
-      "description": "We will be taking photos after the ceremony. Please feel free to join us when we are ready. In the meantime, there will be snacks and drinks available.",
+      "description": "We will be taking photos after the ceremony. Feel free to join us when we are ready. In the meantime, there will be snacks and drinks.",
       "timeLabel": "16:00pm",
       "image": "/images/photography.jpg"
     },
     {
       "id": "reception",
       "title": "Reception",
-      "description": "Following the ceremony, celebrate with dinner, dancing, and drinks under the stars. Your presence is the greatest gift — we hope you'll stay late and dance with us.",
+      "description": "Let's eat, drink and be merry!",
       "timeLabel": "18:00pm",
       "image": "/images/reception.jpg"
     },
