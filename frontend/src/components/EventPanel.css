@@ -1,8 +1,12 @@
 .event-panel {
   display: grid;
-  grid-template-columns: 11rem 1fr 14rem;
+  grid-template-columns: 11rem minmax(0, 32rem);
+  justify-content: center;
   gap: 2rem;
   align-items: start;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
   padding: 1.75rem;
   border: 1px solid var(--color-border);
   background: var(--color-bg);
@@ -41,19 +45,12 @@
   max-width: 32rem;
 }
 
-.event-panel__meta {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding-top: 0.25rem;
-}
-
-.event-panel__venue,
-.event-panel__datetime {
+.event-panel__time {
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   line-height: 1.55;
+  margin-bottom: 1rem;
 }
 
 .event-panel__map {
@@ -102,20 +99,12 @@
 
 @media (max-width: 900px) {
   .event-panel {
-    grid-template-columns: 8.5rem 1fr;
+    grid-template-columns: 8.5rem minmax(0, 32rem);
   }
 
   .event-panel__image-wrap {
     width: 8.5rem;
     height: 8.5rem;
-  }
-
-  .event-panel__meta {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: start;
-    gap: 1.25rem 2rem;
   }
 }
 

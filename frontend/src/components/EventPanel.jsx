@@ -14,36 +14,8 @@ export default function EventPanel({ event }) {
 
       <div className="event-panel__body">
         <h3 className="event-panel__title">{event.title}</h3>
+        <p className="event-panel__time">Starts at {event.timeLabel}</p>
         <p className="event-panel__description">{event.description}</p>
-      </div>
-
-      <div className="event-panel__meta">
-        <p className="event-panel__venue">
-          {event.venue}
-          {event.address ? (
-            <>
-              <br />
-              {event.address}
-            </>
-          ) : null}
-        </p>
-        <p className="event-panel__datetime">
-          {event.dateLabel}
-          <br />
-          {event.timeLabel}
-        </p>
-        <a
-          className="event-panel__map"
-          href={event.mapUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          View on Map
-        </a>
-        <div className="event-panel__attire">
-          <span className="event-panel__attire-label">Attire</span>
-          <p>Cocktail attire</p>
-        </div>
       </div>
     </article>
   );
