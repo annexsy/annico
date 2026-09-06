@@ -7,6 +7,12 @@
     "image": "/images/hero.jpg",
     "alt": "Anne and Nico"
   },
+  "venue": {
+    "name": "Fabriksstråket",
+    "address": "Fabriksstråket 36, 433 76 Jonsered",
+    "dateLabel": "Saturday July 17 2027",
+    "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Fabriksstråket%2036%2C%20433%2076%20Jonsered%2C%20Sverige"
+  },
   "tabs": [
     {
       "id": "home",
@@ -24,33 +30,21 @@
       "id": "welcome",
       "title": "Welcome Drinks",
       "description": "Join us for an evening of warm conversation, light bites, and a first toast to the weekend ahead. Come as you are — we can't wait to welcome you.",
-      "venue": "Fabriksstråket",
-      "address": "Fabriksstråket 36, 433 76",
-      "dateLabel": "Saturday July 17",
       "timeLabel": "14:00pm",
-      "mapUrl": "google.com/maps/dir/?api=1&destination=Fabriksstråket%2036%2C%20433%2076%20Jonsered%2C%20Sverige",
       "image": "/images/welcome.jpg"
     },
     {
       "id": "ceremony",
       "title": "Ceremony",
       "description": "We invite you to gather with us as we exchange vows surrounded by those we love most. Please arrive a few minutes early so you can settle in before we begin.",
-      "venue": "Fabriksstråket",
-      "address": "Fabriksstråket 36, 433 76",
-      "dateLabel": "Saturday July 17",
       "timeLabel": "15:00pm",
-      "mapUrl": "https://www.google.com/maps",
       "image": "/images/ceremony.jpg"
     },
     {
       "id": "reception",
       "title": "Reception",
       "description": "Following the ceremony, celebrate with dinner, dancing, and drinks under the stars. Your presence is the greatest gift — we hope you'll stay late and dance with us.",
-      "venue": "Fabriksstråket",
-      "address": "Fabriksstråket 36, 433 76",
-      "dateLabel": "Saturday July 17",
       "timeLabel": "18:00pm",
-      "mapUrl": "https://www.google.com/maps",
       "image": "/images/reception.jpg"
     }
   ]

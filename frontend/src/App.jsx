@@ -51,6 +51,7 @@ export default function App() {
                 <Home
                   couple={site.couple}
                   hero={site.hero}
+                  venue={site.venue}
                   schedule={site.schedule}
                 />
               }
