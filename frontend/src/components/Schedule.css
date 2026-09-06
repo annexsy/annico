@@ -1,5 +1,6 @@
 .schedule {
-  background: var(--color-bg-pastel-green);
+  background: linear-gradient(180deg, rgba(213, 222, 206, 0.55), rgba(255, 255, 255, 0.95)),
+  var(--color-bg);
   padding: var(--space-section) 1.5rem calc(var(--space-section) + 1rem);
 }
 
