@@ -53,10 +53,11 @@ export default function App() {
                   hero={site.hero}
                   venue={site.venue}
                   schedule={site.schedule}
+                  toastmaster={site.toastmaster}
                 />
               }
             />
-            <Route path="/rsvp" element={<Rsvp />} />
+            <Route path="/rsvp" element={<Rsvp toastmaster={site.toastmaster} />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

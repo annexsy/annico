@@ -13,6 +13,11 @@
     "dateLabel": "Saturday July 17 2027",
     "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Fabriksstråket%2036%2C%20433%2076%20Jonsered%2C%20Sverige"
   },
+  "toastmaster": {
+    "heading": "Speeches",
+    "message": "If you would like to give a speech, contact our toastmaster Beyar Hajo.",
+    "email": "beyar.hajo@widerlov.se"
+  },
   "tabs": [
     {
       "id": "home",

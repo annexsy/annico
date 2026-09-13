@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Toastmaster from '../components/Toastmaster';
 import { isSupabaseConfigured, supabase } from '../lib/supabase';
 import './Rsvp.css';
 
@@ -8,7 +9,7 @@ const initialForm = {
   dietary: '',
 };
 
-export default function Rsvp() {
+export default function Rsvp({ toastmaster }) {
   const [form, setForm] = useState(initialForm);
   const [status, setStatus] = useState('idle');
   const [error, setError] = useState('');
@@ -143,6 +144,8 @@ export default function Rsvp() {
             {status === 'submitting' ? 'Sending…' : 'Send RSVP'}
           </button>
         </form>
+
+        <Toastmaster toastmaster={toastmaster} compact />
       </div>
     </section>
   );
