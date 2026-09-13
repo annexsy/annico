@@ -23,11 +23,6 @@
       "id": "home",
       "label": "HOME",
       "path": "/"
-    },
-    {
-      "id": "rsvp",
-      "label": "RSVP",
-      "path": "/rsvp"
     }
   ],
   "schedule": [

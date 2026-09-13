@@ -9,7 +9,7 @@ export default function Home({ couple, hero, venue, schedule, toastmaster }) {
       <Hero couple={couple} hero={hero} dateLabel={venue?.dateLabel} />
       <Venue venue={venue} />
       <Schedule events={schedule} />
-      <Toastmaster toastmaster={toastmaster} />
+      {/* <Toastmaster toastmaster={toastmaster} /> */}
     </>
   );
 }
