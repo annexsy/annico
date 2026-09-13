@@ -23,12 +23,13 @@ export default function Schedule({ events = [] }) {
       </div>
 
       <div className="schedule__content">
-        <EventPanel key={activeEvent.id} event={activeEvent} />
+        <p className="schedule__status">Coming soon</p>
+         {/* <EventPanel key={activeEvent.id} event={activeEvent} />
         <Timeline
           events={events}
           activeId={activeEvent.id}
           onSelect={setActiveId}
-        />
+        />  */}
       </div>
     </section>
   );

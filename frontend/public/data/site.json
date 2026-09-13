@@ -13,16 +13,16 @@
     "dateLabel": "Saturday July 17 2027",
     "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=Fabriksstråket%2036%2C%20433%2076%20Jonsered%2C%20Sverige"
   },
+  "toastmaster": {
+    "heading": "Speeches",
+    "message": "If you would like to give a speech, contact our toastmaster Beyar Hajo.",
+    "email": "beyar.hajo@widerlov.se"
+  },
   "tabs": [
     {
       "id": "home",
       "label": "HOME",
       "path": "/"
-    },
-    {
-      "id": "rsvp",
-      "label": "RSVP",
-      "path": "/rsvp"
     }
   ],
   "schedule": [
@@ -36,14 +36,14 @@
     {
       "id": "ceremony",
       "title": "Ceremony",
-      "description": "We invite you to gather with us as we exchange vows surrounded by those we love most. Please arrive a few minutes early so you can settle in before we begin.",
+      "description": "We invite you to gather with us as we say 'I do'! Please arrive a few minutes early so you can settle in before we begin.",
       "timeLabel": "15:00pm",
       "image": "/images/ceremony.jpg"
     },
     {
       "id": "photograpy",
       "title": "Photography",
-      "description": "We will be taking photos after the ceremony. Feel free to join us when we are ready. In the meantime, there will be snacks and drinks.",
+      "description": "We will be taking photos after the ceremony. Feel free to join us when we are ready. In the meantime, there will be snacks and drinks!",
       "timeLabel": "16:00pm",
       "image": "/images/photography.jpg"
     },
@@ -57,8 +57,8 @@
     {
       "id": "party",
       "title": "Party",
-      "description": "The celebration continues with music, dancing and drinks! We hope you'll stay late and dance with us <3",
-      "timeLabel": "22:00pm",
+      "description": "The celebration continues! We hope you'll stay late and dance with us <3",
+      "timeLabel": "21:00pm",
       "image": "/images/party.jpg"
     }
 
