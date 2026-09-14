@@ -78,4 +78,8 @@
     min-height: 70vh;
     height: 75vh;
   }
+
+  .hero__image {
+    object-position: 38% 38%
+  }
 }
